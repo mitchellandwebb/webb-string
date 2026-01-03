@@ -5,19 +5,37 @@
         "path": "./",
         "core": {
           "dependencies": [
-            "console",
-            "effect",
-            "monad-loops",
-            "prelude",
-            "strings",
-            "transformers",
-            "webb-array",
-            "webb-refer"
+            {
+              "arrays": ">=7.3.0 <8.0.0"
+            },
+            {
+              "maybe": ">=6.0.0 <7.0.0"
+            },
+            {
+              "monad-loops": ">=0.5.0 <0.6.0"
+            },
+            {
+              "prelude": ">=6.0.2 <7.0.0"
+            },
+            {
+              "strings": ">=6.0.1 <7.0.0"
+            },
+            {
+              "transformers": ">=6.1.0 <7.0.0"
+            },
+            {
+              "tuples": ">=7.0.0 <8.0.0"
+            },
+            {
+              "webb-array": ">=0.0.2 <0.1.0"
+            },
+            {
+              "webb-refer": ">=0.0.3 <0.1.0"
+            }
           ],
           "build_plan": [
             "arrays",
             "bifunctors",
-            "console",
             "const",
             "contravariant",
             "control",
@@ -728,9 +746,7 @@
     },
     "extra_packages": {
       "spec-discovery": "8.2.0",
-      "webb-array": {
-        "path": "../webb-array"
-      },
+      "webb-array": "0.0.2",
       "webb-refer": "0.0.3",
       "webb-test": "0.0.1"
     }
@@ -1793,8 +1809,9 @@
       "dependencies": []
     },
     "webb-array": {
-      "type": "local",
-      "path": "../webb-array",
+      "type": "registry",
+      "version": "0.0.2",
+      "integrity": "sha256-n+gX7/W8grCu3oRqluO6W/2dj++Ma9KSYwd6tUWPDNM=",
       "dependencies": [
         "arrays",
         "foldable-traversable",
