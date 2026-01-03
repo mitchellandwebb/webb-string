@@ -4,10 +4,24 @@ package:
     - console
     - effect
     - prelude
+    - strings
+    - webb-array
+    - transformers
+    - monad-loops
+    - webb-refer
   test:
     main: Test.Main
-    dependencies: []
+    dependencies:
+      - spec-discovery
+      - spec
+      - spec-node
+      - webb-test
 workspace:
   packageSet:
     registry: 69.7.0
-  extraPackages: {}
+  extraPackages:
+    spec-discovery: 8.2.0
+    webb-array:
+      path: '../webb-array'
+    webb-refer: 0.0.3
+    webb-test: 0.0.1
